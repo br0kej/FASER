@@ -1,0 +1,85 @@
+[
+{
+    "data": "8 sp -= r4 sp =[4] lr sp 4 + =[4] 0 r1 + IMM & r4 = $z zf := 31 $s nf := 31 $c cf := 31 $o vf := zf ! ?{ 1 r4 = } 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ 0 r4 = } 0 r4 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } r0 r3 = r1 r0 = 2 2 IMM >> << 92 + IMM & [4] IMM & r1 = r3 r4 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 1 r4 = r4 r0 = pc r4 2 sp [*] 8 sp += 28 r4 + IMM & r1 = pc lr := FUNC pc := 0 r0 - IMM & r4 = $z zf := 31 $s nf := 31 $c cf := 31 $o vf := zf ! ?{ DATA pc := } pc lr := FUNC pc := 2 2 IMM >> << 40 + IMM & [4] IMM & r2 = 2 2 IMM >> << 40 + IMM & [4] IMM & r0 = 40 r1 = r2 IMM + IMM & r2 = r0 IMM + IMM & r0 = pc lr := FUNC pc := r4 r2 = 103 r1 = 56 r0 = pc lr := FUNC pc := DATA pc :=",
+    "hash": 12121530842480300275,
+    "name": "sym.mdc2_set_ctx_params",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "19 r3 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := cf zf ! & ?{ DATA pc := } 0 r0 = 0 lr - pc := 0 r0 = pc r4 2 sp [*] 8 sp += r1 r3 = 8 sp -= r4 sp =[4] lr sp 4 + =[4] r0 r1 = r3 r0 = r2 r4 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } 20 r3 = 1 r0 = r3 IMM r4 + IMM & =[4] pc r4 2 sp [*] 8 sp +=",
+    "hash": 13477877576277034761,
+    "name": "sym.ripemd160_internal_final",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "8 r1 + IMM & r1 = 16 sp -= r4 sp =[4] r5 sp 4 + =[4] r6 sp 8 + =[4] lr sp 12 + =[4] 0 r4 = IMM r1 - IMM & [4] IMM & ip = 0 ip == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 0 r4 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } r3 r5 = 2 2 IMM >> << 48 + IMM & [4] IMM & r3 = r3 IMM + IMM & r3 = 32 r3 + IMM & r3 = r3 IMM r2 + IMM & =[4] pc lr := 0 r4 - pc := r0 IMM r5 + IMM & =[4] 1 r0 = pc r6 r5 r4 4 sp [*] 16 sp += 4 ip == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := 8 r1 + IMM & r1 = zf ?{ IMM r1 - IMM & [4] IMM & r4 = } DATA pc := r4 r0 = pc r6 r5 r4 4 sp [*] 16 sp +=",
+    "hash": 1845050973865848768,
+    "name": "sym.OSSL_provider_init",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "15 r3 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := cf zf ! & ?{ DATA pc := } 0 r0 = 0 lr - pc := 0 r0 = pc r4 2 sp [*] 8 sp += r1 r3 = 8 sp -= r4 sp =[4] lr sp 4 + =[4] r0 r1 = r3 r0 = r2 r4 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } 16 r3 = 1 r0 = r3 IMM r4 + IMM & =[4] pc r4 2 sp [*] 8 sp +=",
+    "hash": 7936786565816001447,
+    "name": "sym.mdc2_internal_final",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "63 r3 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := cf zf ! & ?{ DATA pc := } 0 r0 = 0 lr - pc := 0 r0 = pc r4 2 sp [*] 8 sp += r1 r3 = 8 sp -= r4 sp =[4] lr sp 4 + =[4] r0 r1 = r3 r0 = r2 r4 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } 64 r3 = 1 r0 = r3 IMM r4 + IMM & =[4] pc r4 2 sp [*] 8 sp +=",
+    "hash": 8696830401721744937,
+    "name": "sym.wp_internal_final",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "24 sp -= r4 sp =[4] r5 sp 4 + =[4] r6 sp 8 + =[4] r7 sp 12 + =[4] r8 sp 16 + =[4] lr sp 20 + =[4] r1 r4 = 2 2 IMM >> << 236 + IMM & [4] IMM & r1 = r0 r5 = r2 r7 = r1 IMM + IMM & r1 = r3 r6 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } r4 r1 = pc lr := FUNC pc := 0 r0 - IMM & r4 = $z zf := 31 $s nf := 31 $c cf := 31 $o vf := zf ! ?{ DATA pc := } pc lr := FUNC pc := 2 2 IMM >> << 188 + IMM & [4] IMM & r2 = 2 2 IMM >> << 188 + IMM & [4] IMM & r0 = 21 r1 = r2 IMM + IMM & r2 = r0 IMM + IMM & r0 = pc lr := FUNC pc := r4 r2 = 104 r1 = 56 r0 = pc lr := FUNC pc := DATA pc := 2 2 IMM >> << 152 + IMM & [4] IMM & r1 = r5 r0 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } r7 r1 = pc lr := FUNC pc := 0 r0 - IMM & r4 = $z zf := 31 $s nf := 31 $c cf := 31 $o vf := zf ! ?{ DATA pc := } pc lr := FUNC pc := 2 2 MEM >> << 112 + IMM & [4] IMM & r2 = 2 2 MEM >> << 112 + IMM & [4] IMM & r0 = 26 r1 = r2 MEM + IMM & r2 = r0 MEM + IMM & r0 = DATA pc := 2 2 MEM >> << 96 + IMM & [4] IMM & r1 = r5 r0 = r1 MEM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 1 r4 = r4 r0 = pc r8 r7 r6 r5 r4 6 sp [*] 24 sp += r6 r1 = pc lr := FUNC pc := 0 r0 - IMM & r4 = $z zf := 31 $s nf := 31 $c cf := 31 $o vf := zf ! ?{ DATA pc := } pc lr := FUNC pc := 2 2 MEM >> << 44 + IMM & [4] IMM & r2 = 2 2 MEM >> << 44 + IMM & [4] IMM & r0 = 31 r1 = r2 MEM + IMM & r2 = r0 MEM + IMM & r0 = DATA pc :=",
+    "hash": 2204116340520687893,
+    "name": "sym.digest_default_get_params",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "8 sp -= r4 sp =[4] lr sp 4 + =[4] r1 r4 = 2 2 IMM >> << 148 + IMM & [4] IMM & r1 = r4 r0 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 2 2 IMM >> << 128 + IMM & [4] IMM & r1 = r4 r0 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 2 2 IMM >> << 108 + IMM & [4] IMM & r1 = r4 r0 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 1 r0 = pc r4 2 sp [*] 8 sp += 2 2 IMM >> << 80 + IMM & [4] IMM & r1 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } 0 r0 = pc r4 2 sp [*] 8 sp += 2 2 IMM >> << 56 + IMM & [4] IMM & r1 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ! ?{ DATA pc := } DATA pc := 2 2 IMM >> << 36 + IMM & [4] IMM & r1 = r1 IMM + IMM & r1 = pc lr := FUNC pc := 0 r0 + IMM & r0 = $z zf := 31 $s nf := 31 $c cf := 31 $o vf := zf ! ?{ 1 r0 = } pc r4 2 sp [*] 8 sp +=",
+    "hash": 5820778842474411111,
+    "name": "sym.legacy_get_params",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "15 r3 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := cf zf ! & ?{ DATA pc := } 0 r0 = 0 lr - pc := 0 r0 = pc r4 2 sp [*] 8 sp += r1 r3 = 8 sp -= r4 sp =[4] lr sp 4 + =[4] r0 r1 = r3 r0 = r2 r4 = pc lr := FUNC pc := 0 r0 == $z zf := 31 $s nf := 32 $b ! cf := 31 $o vf := zf ?{ DATA pc := } 16 r3 = 1 r0 = r3 IMM r4 + IMM & =[4] pc r4 2 sp [*] 8 sp +=",
+    "hash": 3764084692758806027,
+    "name": "sym.md4_internal_final",
+    "triple": "arm32-gcc-7-Os"
+},
+{
+    "data": "48 sp - sp = ra IMM sp + =[8] gp IMM sp + =[8] s3 IMM sp + =[8] s2 IMM sp + =[8] s1 IMM sp + =[8] s0 IMM sp + =[8] MEM at = t9 at + at = DATA at + gp = a3 s0 = a2 s2 = a1 s3 = a0 s1 = DATA gp - [8] at = DATA gp - [8] t9 = pc 4 + ra = t9 pc := DATA at + a1 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := s1 a0 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := s1 a0 = v0 0 == $z ?{ DATA pc := } 1 zero + s1 = s1 v0 = IMM sp + [8] s0 = IMM sp + [8] s1 = IMM sp + [8] s2 = IMM sp + [8] s3 = IMM sp + [8] gp = IMM sp + [8] ra = ra pc := 48 sp + sp = DATA gp - [8] t9 = v0 a0 = pc 4 + ra = t9 pc := s0 a1 = v0 0 == $z ! ?{ DATA pc := } DATA gp - [8] t9 = pc 4 + ra = t9 pc := DATA gp - [8] at = DATA at + a0 = DATA gp - [8] at = DATA at + a2 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := 31 zero + a1 = DATA gp - [8] t9 = 56 zero + a0 = 104 zero + a1 = pc 4 + ra = t9 pc := 0 zero + a2 = DATA pc := 0 zero + s1 = DATA gp - [8] t9 = v0 a0 = pc 4 + ra = t9 pc := s2 a1 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] t9 = pc 4 + ra = t9 pc := DATA gp - [8] at = DATA at + a0 = DATA gp - [8] at = DATA at + a2 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := 26 zero + a1 = DATA gp - [8] t9 = 56 zero + a0 = 104 zero + a1 = pc 4 + ra = t9 pc := 0 zero + a2 = 0 zero + s1 = DATA gp - [8] t9 = v0 a0 = pc 4 + ra = t9 pc := s3 a1 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] t9 = pc 4 + ra = t9 pc := DATA gp - [8] at = DATA at + a0 = DATA gp - [8] at = DATA at + a2 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := 21 zero + a1 = DATA gp - [8] t9 = 56 zero + a0 = 104 zero + a1 = pc 4 + ra = t9 pc := 0 zero + a2 = DATA pc := 0 zero + s1 =",
+    "hash": 13725479789563916471,
+    "name": "sym.digest_default_get_params",
+    "triple": "mips64-clang-3.5-O2"
+},
+{
+    "data": "48 sp - sp = gp IMM sp + =[8] MEM gp = t9 gp + gp = DATA gp + gp = s3 IMM sp + =[8] DATA gp - [8] s3 = ra IMM sp + =[8] IMM s3 + [1] v0 = s2 IMM sp + =[8] s1 IMM sp + =[8] v0 0 == $z ! ?{ DATA pc := } s0 IMM sp + =[8] IMM sp + [8] ra = IMM sp + [8] gp = IMM sp + [8] s3 = IMM sp + [8] s2 = IMM sp + [8] s1 = IMM sp + [8] s0 = ra pc := 48 sp + sp = DATA gp - [8] v0 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] v0 = DATA gp - [8] v0 = DATA gp - [8] s0 = 16 v0 + v0 = DATA gp - [8] s1 = v0 s0 - s0 = 3 s0 >> 31 s0 >> ?{ 32 3 32 - IMM << IMM & << }{ 0 } | s0 = IMM s1 + [8] v0 = 1 s0 - s0 = DATA gp - [8] a0 = IMM s0 & IMM v0 & < v1 = 16 a0 + s2 = v1 0 == $z ?{ DATA pc := } DATA gp - [8] t9 = 0 t9 + t9 = pc 4 + ra = t9 pc := 1 zero + v0 = v0 IMM s3 + =[1] 1 v0 + v0 = v1 s2 + v1 = IMM v1 + [8] t9 = pc 4 + ra = t9 pc := v0 IMM s1 + =[8] IMM s1 + [8] v0 = IMM s0 & IMM v0 & < v1 = v1 0 == $z ! ?{ DATA pc := } 1 v0 + v0 = DATA gp - [8] t9 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := IMM v0 + [8] a0 =",
+    "hash": 14988301111986886769,
+    "name": "sym.__do_global_dtors_aux",
+    "triple": "mips64-clang-3.5-O2"
+},
+{
+    "data": "32 sp - sp = ra IMM sp + =[8] gp IMM sp + =[8] s1 IMM sp + =[8] s0 IMM sp + =[8] MEM at = t9 at + v0 = a0 s1 = s1 0 == $z ?{ DATA pc := } 0 zero + s0 = s0 v0 = IMM sp + [8] s0 = IMM sp + [8] s1 = IMM sp + [8] gp = IMM sp + [8] ra = ra pc := 32 sp + sp = a1 0 == $z ?{ DATA pc := } DATA v0 + gp = DATA gp - [8] at = DATA at + at = DATA gp - [8] t9 = a1 a0 = pc 4 + ra = t9 pc := at a1 = v0 0 == $z ?{ DATA pc := } 1 zero + s0 = 28 s1 + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := v0 a0 = v0 0 == $z ! ?{ DATA pc := } DATA gp - [8] t9 = pc 4 + ra = t9 pc := DATA gp - [8] at = DATA at + a0 = DATA gp - [8] at = DATA at + a2 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := 40 zero + a1 = DATA gp - [8] t9 = 56 zero + a0 = 103 zero + a1 = pc 4 + ra = t9 pc := 0 zero + a2 = 0 zero + s0 =",
+    "hash": 1666992933754698237,
+    "name": "loc._tmp5_1",
+    "triple": "mips64-clang-3.5-O2"
+},
+{
+    "data": "32 sp - sp = ra IMM sp + =[8] gp IMM sp + =[8] s0 IMM sp + =[8] MEM at = t9 at + at = DATA at + gp = a1 s0 = DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := s0 a0 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := s0 a0 = v0 0 == $z ?{ DATA pc := } DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := s0 a0 = v0 0 == $z ?{ DATA pc := } 1 zero + v0 = DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := v0 a0 = v0 at = at 0 == $z ?{ DATA pc := } 0 zero + v0 = IMM sp + [8] s0 = IMM sp + [8] gp = IMM sp + [8] ra = ra pc := 32 sp + sp = DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := v0 a0 = v0 at = at 0 == $z ?{ DATA pc := } 0 zero + v0 = DATA gp - [8] at = DATA at + a1 = DATA gp - [8] t9 = pc 4 + ra = t9 pc := v0 a0 = v0 at = at 0 == $z ?{ DATA pc := } 0 zero + v0 =",
+    "hash": 4391685190938851404,
+    "name": "loc._tmp4",
+    "triple": "mips64-clang-3.5-O2"
+},
+{
+    "data": "MEM gp = DATA gp + gp = t9 gp + gp = 48 sp - sp = s3 IMM sp + =[4] DATA gp - [4] s3 = gp IMM sp + =[4] ra IMM sp + =[4] s2 IMM sp + =[4] s1 IMM sp + =[4] s0 IMM sp + =[4] IMM s3 + [1] v0 = v0 0 == $z ! ?{ DATA pc := } DATA gp - [4] v0 = IMM sp + [4] ra = IMM sp + [4] s3 = IMM sp + [4] s2 = IMM sp + [4] s1 = IMM sp + [4] s0 = ra pc := 48 sp + sp = v0 0 == $z ?{ DATA pc := } DATA gp - [4] v0 = DATA gp - [4] v0 = DATA gp - [4] s0 = DATA gp - [4] s1 = 8 v0 + v1 = 8 v0 + s2 = v1 s0 - s0 = IMM s1 + [4] v0 = IMM 2 s0 >> & 31 s0 >> ?{ 2 32 - IMM << IMM & }{ 0 } | s0 = 1 s0 - s0 = IMM s0 & IMM v0 & < v1 = v1 0 == $z ?{ DATA pc := } DATA gp - [4] t9 = 0 t9 + t9 = pc 4 + ra = t9 pc := 1 zero + v0 = v0 IMM s3 + =[1] 1 v0 + v0 = 2 v0 << v1 = v0 IMM s1 + =[4] v1 s2 + v0 = IMM v0 + [4] t9 = pc 4 + ra = t9 pc := IMM s1 + [4] v0 = IMM s0 & IMM v0 & < v1 = v1 0 == $z ! ?{ DATA pc := } IMM sp + [4] gp = DATA gp - [4] t9 = DATA gp - [4] t9 = pc 4 + ra = t9 pc := IMM v0 + [4] a0 = IMM sp + [4] gp =",
+    "hash": 5881549833296213853,
+    "name": "sym.__do_global_dtors_aux",
+    "triple": "mips32-clang-3.5-O1"
+},
+{
+    "data": "MEM v0 = DATA v0 + v0 = 40 sp - sp = ra IMM sp + =[4] s4 IMM sp + =[4] s3 IMM sp + =[4] s2 IMM sp + =[4] s1 IMM sp + =[4] s0 IMM sp + =[4] t9 v0 + s0 = a3 s1 = a2 s3 = a1 s4 = a0 s2 = DATA s0 - [4] at = DATA at + a1 = DATA s0 - [4] t9 = pc 4 + ra = t9 pc := s0 gp = v0 0 == $z ?{ DATA pc := } DATA s0 - [4] at = DATA at + a1 = DATA s0 - [4] t9 = pc 4 + ra = t9 pc := s2 a0 = v0 0 == $z ?{ DATA pc := } DATA s0 - [4] at = DATA at + a1 = DATA s0 - [4] t9 = pc 4 + ra = t9 pc := s2 a0 = v0 0 == $z ?{ DATA pc := } 1 zero + s2 = s2 v0 = IMM sp + [4] s0 = IMM sp + [4] s1 = IMM sp + [4] s2 = IMM sp + [4] s3 = IMM sp + [4] s4 = IMM sp + [4] ra = ra pc := 40 sp + sp = DATA s0 - [4] t9 = v0 a0 = s1 a1 = pc 4 + ra = t9 pc := s0 gp = v0 0 == $z ! ?{ DATA pc := } DATA s0 - [4] t9 = pc 4 + ra = t9 pc := s0 gp = DATA s0 - [4] at = DATA at + a0 = DATA s0 - [4] at = DATA at + a2 = DATA s0 - [4] t9 = 31 zero + a1 = pc 4 + ra = t9 pc := s0 gp = 0 zero + s2 = DATA s0 - [4] t9 = 56 zero + a0 = 104 zero + a1 = 0 zero + a2 = pc 4 + ra = t9 pc := s0 gp = DATA pc := DATA s0 - [4] t9 = v0 a0 = s3 a1 = pc 4 + ra = t9 pc := s0 gp = v0 0 == $z ?{ DATA pc := } DATA s0 - [4] t9 = pc 4 + ra = t9 pc := s0 gp = DATA s0 - [4] at = DATA at + a0 = DATA s0 - [4] at = DATA at + a2 = DATA s0 - [4] t9 = 26 zero + a1 = pc 4 + ra = t9 pc := s0 gp = 0 zero + s2 = DATA s0 - [4] t9 = 56 zero + a0 = 104 zero + a1 = 0 zero + a2 = pc 4 + ra = t9 pc := s0 gp = DATA s0 - [4] t9 = v0 a0 = s4 a1 = pc 4 + ra = t9 pc := s0 gp = v0 0 == $z ?{ DATA pc := } DATA s0 - [4] t9 = pc 4 + ra = t9 pc := s0 gp = DATA s0 - [4] at = DATA at + a0 = DATA s0 - [4] at = DATA at + a2 = DATA s0 - [4] t9 = 21 zero + a1 = pc 4 + ra = t9 pc := s0 gp = 0 zero + s2 = DATA s0 - [4] t9 = 56 zero + a0 = 104 zero + a1 = 0 zero + a2 = pc 4 + ra = t9 pc := s0 gp = DATA pc :=",
+    "hash": 171143204648904516,
+    "name": "sym.digest_default_get_params",
+    "triple": "mips32-clang-3.5-O1"
+}]

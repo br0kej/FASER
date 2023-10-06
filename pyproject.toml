@@ -1,0 +1,19 @@
+[project]
+name = "faser"
+description = "The code associated with the research paper titled FASER: Binary Code Similarity Search through the use of Intermediate Representations (https://arxiv.org/abs/2310.03605)"
+version = "0.1.0"
+requires-python = ">3.8"
+authors = [
+    { name = "Josh Collyer", email = "j.collyer@lboro.ac.uk" }
+]
+dependencies = [
+    "transformers",
+    "tokenizers",
+    "torchmetrics",
+    "pytorch-metric-learning",
+    "tqdm",
+    "scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["data-samples*", "model_artefacts"]
