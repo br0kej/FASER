@@ -9,7 +9,7 @@ from faser.tokeniser import print_tokeniser_encode_example, train_bpe_tokeniser
 from faser.train import FASERTrain
 
 parser = argparse.ArgumentParser(
-    prog="cli.py", description="Frontend for training and testing FASER models"
+    prog="faser", description="Frontend for training and testing FASER models"
 )
 
 sub_parsers = parser.add_subparsers(dest="command")
@@ -142,60 +142,67 @@ parser_vuln_search_eval.add_argument(
     help="Model name for output artefacts",
     required=True,
 )
-args = parser.parse_args()
 
-if args.command == "fstr2txt":
-    fstrs_to_tokeniser_training_data(args.data_dir, args.output_name)
 
-elif args.command == "tokeniser":
-    tokeniser = train_bpe_tokeniser(
-        args.input_data, max_seq_length=int(args.max_seq_len)
-    )
-    tokeniser.save(f"{args.max_seq_len}-{args.output_path}")
+def main():
+    args = parser.parse_args()
 
-elif args.command == "encode":
-    tokeniser = Tokenizer.from_file(args.tokeniser_path)
-    print_tokeniser_encode_example(tokeniser, args.input)
+    if args.command == "fstr2txt":
+        fstrs_to_tokeniser_training_data(args.data_dir, args.output_name)
 
-elif args.command == "train":
-    model = FASERTrain(
-        name=args.name,
-        train_data_fp=args.train_data,
-        test_data_fp=args.test_data,
-        tokeniser_fp=args.tokeniser_fp,
-        batch_size=args.batch_size,
-        num_pos_pairs_in_batch=args.num_pos_pairs_in_batch,
-        learning_rate=args.learning_rate,
-        num_training_epochs=args.epochs,
-        num_accumlation_steps=args.num_accumlation_steps,
-        filter_str=args.filter_str,
-    )
+    elif args.command == "tokeniser":
+        tokeniser = train_bpe_tokeniser(
+            args.input_data, max_seq_length=int(args.max_seq_len)
+        )
+        tokeniser.save(f"{args.max_seq_len}-{args.output_path}")
 
-    model.train()
+    elif args.command == "encode":
+        tokeniser = Tokenizer.from_file(args.tokeniser_path)
+        print_tokeniser_encode_example(tokeniser, args.input)
 
-elif args.command == "fseval":
-    if args.verbose:
-        logging.basicConfig(level=logging.DEBUG)
+    elif args.command == "train":
+        model = FASERTrain(
+            name=args.name,
+            train_data_fp=args.train_data,
+            test_data_fp=args.test_data,
+            tokeniser_fp=args.tokeniser_fp,
+            batch_size=args.batch_size,
+            num_pos_pairs_in_batch=args.num_pos_pairs_in_batch,
+            learning_rate=args.learning_rate,
+            num_training_epochs=args.epochs,
+            num_accumlation_steps=args.num_accumlation_steps,
+            filter_str=args.filter_str,
+        )
 
-    eval_run = FaserGeneralFuncSearchEval(
-        torch_model_bin_fp=args.model,
-        eval_data_fp=args.eval_data,
-        max_seq_len=args.input_dim,
-        tokeniser_fp=args.tokeniser,
-        filter_str=args.filter_str,
-        num_eval_search_pools=args.num_eval_sp,
-        search_pool_size=args.sp_size,
-    )
+        model.train()
 
-    eval_run.eval()
+    elif args.command == "fseval":
+        if args.verbose:
+            logging.basicConfig(level=logging.DEBUG)
 
-elif args.command == "vseval":
-    eval_run = FaserVulnSearchEval(
-        torch_model_bin_fp=args.model,
-        eval_data_dir=args.eval_data,
-        max_seq_len=args.input_dim,
-        tokeniser_fp=args.tokeniser,
-        model_friendly_name=args.model_friendly_name,
-    )
+        eval_run = FaserGeneralFuncSearchEval(
+            torch_model_bin_fp=args.model,
+            eval_data_fp=args.eval_data,
+            max_seq_len=args.input_dim,
+            tokeniser_fp=args.tokeniser,
+            filter_str=args.filter_str,
+            num_eval_search_pools=args.num_eval_sp,
+            search_pool_size=args.sp_size,
+        )
 
-    eval_run.rank()
+        eval_run.eval()
+
+    elif args.command == "vseval":
+        eval_run = FaserVulnSearchEval(
+            torch_model_bin_fp=args.model,
+            eval_data_dir=args.eval_data,
+            max_seq_len=args.input_dim,
+            tokeniser_fp=args.tokeniser,
+            model_friendly_name=args.model_friendly_name,
+        )
+
+        eval_run.rank()
+
+
+if __name__ == "__main__":
+    main()

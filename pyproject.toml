@@ -15,5 +15,8 @@ dependencies = [
     "scikit-learn"
 ]
 
+[project.scripts]
+faser = "faser.cli:main"
+
 [tool.setuptools.packages.find]
 exclude = ["data-samples*", "model_artefacts"]
